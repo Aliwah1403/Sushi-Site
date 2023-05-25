@@ -1,0 +1,84 @@
+.about-us {
+  display: flex;
+  min-height: 720px;
+  overflow: hidden;
+}
+
+.about-us__image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--color-white);
+  position: relative;
+}
+
+.about-us__image div {
+  padding: 32px 64px;
+  flex: 1;
+  /* flex of 1 allows it to take up all the available space */
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.about-us__image-sushi3 {
+  border-bottom: 8px solid var(--color-creamson);
+  background-image: url("../../assets/about_bg1.png");
+}
+
+.about-us__image-sushi2 {
+  background-image: url("../../assets/about_bg2.png");
+}
+
+.about-us__image-sushi3 img {
+  width: 225px;
+  height: 200px;
+}
+
+.about-us__image-sushi2 img {
+  width: 240px;
+  height: 160px;
+}
+
+.about-us__button {
+  position: absolute;
+  /* this means it will not care about the items that are next to it */
+
+  right: 0;
+  /* meaning it will go to the end of its container */
+
+  padding: 12px 32px;
+  min-height: 64px;
+  background: var(--secondary-color);
+  border-radius: 32px 0 0 32px;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-family: var(--plus-jakarta-sans);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+  animation: ease-in-out 30ms;
+}
+
+.about-us__button:hover {
+  transform: translateX(-10px);
+  animation-delay: 5ms;
+}
+
+.about-us__button img {
+  object-fit: contain;
+  margin-left: 32px;
+}
+
+.about-us__content {
+  padding: 64px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
